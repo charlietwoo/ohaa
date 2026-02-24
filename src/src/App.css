@@ -1,0 +1,566 @@
+.app {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.header {
+  background: linear-gradient(135deg, var(--olympic-blue), var(--olympic-dark-blue));
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.cta-button {
+  background: var(--olympic-gold);
+  color: var(--olympic-black);
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(252, 209, 22, 0.3);
+}
+
+.cta-button:hover {
+  background: #e8be10;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(252, 209, 22, 0.4);
+}
+
+.cta-button.large {
+  padding: 16px 40px;
+  font-size: 18px;
+}
+
+.cta-button.white {
+  background: white;
+  color: var(--olympic-blue);
+}
+
+.cta-button.white:hover {
+  background: var(--slate-100);
+}
+
+.cta-button-secondary {
+  background: transparent;
+  color: var(--olympic-blue);
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  border: 2px solid var(--olympic-blue);
+  transition: all 0.3s ease;
+}
+
+.cta-button-secondary:hover {
+  background: var(--olympic-blue);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.cta-button-secondary.large {
+  padding: 16px 40px;
+  font-size: 18px;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--slate-50), white);
+  padding: 80px 0;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-content {
+  animation: fadeInUp 0.8s ease;
+}
+
+.hero-title {
+  font-size: 64px;
+  color: var(--slate-900);
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--olympic-blue), var(--olympic-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+  color: var(--slate-700);
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.hero-description {
+  font-size: 18px;
+  color: var(--slate-700);
+  margin-bottom: 32px;
+  line-height: 1.8;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  animation: fadeInRight 0.8s ease;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--slate-900);
+}
+
+.section-description {
+  text-align: center;
+  font-size: 20px;
+  color: var(--slate-700);
+  margin-bottom: 60px;
+}
+
+.countdown {
+  background: linear-gradient(135deg, var(--olympic-blue), var(--olympic-dark-blue));
+  color: white;
+}
+
+.countdown .section-title {
+  color: white;
+}
+
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  max-width: 800px;
+  margin: 0 auto 32px;
+}
+
+.countdown-item {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 32px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.countdown-number {
+  font-size: 64px;
+  font-weight: 800;
+  color: var(--olympic-gold);
+  margin-bottom: 8px;
+}
+
+.countdown-label {
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.countdown-date {
+  text-align: center;
+  font-size: 24px;
+  color: var(--olympic-gold);
+  font-weight: 600;
+}
+
+.sports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.sport-card {
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.sport-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  border-color: var(--olympic-blue);
+}
+
+.sport-icon {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+.sport-card h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: var(--slate-900);
+}
+
+.sport-card p {
+  color: var(--slate-700);
+  font-size: 16px;
+}
+
+.venues {
+  background: var(--slate-50);
+}
+
+.venues-content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.venue-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.venue-item.reverse {
+  direction: rtl;
+}
+
+.venue-item.reverse > * {
+  direction: ltr;
+}
+
+.venue-image {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.venue-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.venue-info h3 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: var(--slate-900);
+}
+
+.venue-info p {
+  font-size: 18px;
+  color: var(--slate-700);
+  line-height: 1.8;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 64px;
+  font-weight: 800;
+  color: var(--olympic-blue);
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 18px;
+  color: var(--slate-700);
+  font-weight: 600;
+}
+
+.values {
+  background: var(--slate-50);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.value-card {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.value-icon {
+  font-size: 72px;
+  margin-bottom: 20px;
+}
+
+.value-icon.gold {
+  filter: drop-shadow(0 4px 8px rgba(252, 209, 22, 0.4));
+}
+
+.value-icon.silver {
+  filter: drop-shadow(0 4px 8px rgba(192, 192, 192, 0.4));
+}
+
+.value-icon.bronze {
+  filter: drop-shadow(0 4px 8px rgba(205, 127, 50, 0.4));
+}
+
+.value-card h3 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: var(--slate-900);
+}
+
+.value-card p {
+  font-size: 16px;
+  color: var(--slate-700);
+  line-height: 1.7;
+}
+
+.tickets-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.ticket-card {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.ticket-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  border-color: var(--olympic-blue);
+}
+
+.ticket-card.featured {
+  border-color: var(--olympic-gold);
+  box-shadow: 0 8px 32px rgba(252, 209, 22, 0.2);
+}
+
+.ticket-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--olympic-gold);
+  color: var(--olympic-black);
+  padding: 6px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.ticket-type {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--slate-900);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.ticket-price {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--olympic-blue);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.ticket-features {
+  list-style: none;
+  margin-bottom: 32px;
+}
+
+.ticket-features li {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--slate-100);
+  color: var(--slate-700);
+  font-size: 16px;
+}
+
+.ticket-features li:last-child {
+  border-bottom: none;
+}
+
+.ticket-card .cta-button {
+  width: 100%;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, var(--olympic-blue), var(--olympic-dark-blue));
+  color: white;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 48px;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.cta-description {
+  font-size: 20px;
+  margin-bottom: 32px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer {
+  background: var(--slate-900);
+  color: white;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.footer p {
+  color: var(--slate-100);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 968px) {
+  .hero .container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .countdown-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tickets-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .venue-item {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .countdown-number {
+    font-size: 48px;
+  }
+
+  .stat-number {
+    font-size: 48px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+  }
+}
